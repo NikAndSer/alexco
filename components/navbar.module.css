@@ -1,0 +1,20 @@
+.leafImage {
+    position: absolute;
+    top: -38px; /* Adjust the position to hide a portion behind the top border */
+    left: 21%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
+}
+
+/* .navbar {
+    position: realtive;
+    top: 0;
+    z-index: 1000;
+} */
+
+/* Hide Leaf PNG */
+@media (max-width: 1100px) {
+    .leafImage {
+        display: none;
+    }
+}
+

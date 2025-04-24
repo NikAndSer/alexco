@@ -1,0 +1,27 @@
+.contacts {
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.mapWrapper {
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Hide the scrollbars */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.contactsWrapper {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Hide mintImage */
+@media (max-width: 1100px) {
+    .mintImage {
+        display: none;
+    }
+}

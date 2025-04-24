@@ -1,0 +1,86 @@
+.mintImage {
+    position: absolute; 
+    top: -60px; 
+    right: -8%; 
+    transform: translateX(-50%); /* Center the image */
+}
+
+.tomatoImage {
+    position: absolute;
+    left: -1%; 
+    transform: translateX(-50%); 
+}
+
+.pepperImage {
+    position: absolute;
+    right: 0%; 
+    transform: translateX(-50%); 
+}
+
+.wholeTomatoImage {
+    position: absolute;
+    top: 90%;
+    left: -5%; 
+    transform: translateX(-50%); 
+    transform: rotate(11deg);
+}
+
+.lemonImage {
+    position: absolute;
+    top: 75%;
+    right: -15%; 
+    transform: translateX(-50%); 
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1300px) {
+    .lemonImage {
+        right: -18%;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+    .mintImage {
+        display: none;
+    }
+    
+    .lemonImage {
+        right: -25%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wholeTomatoImage {
+        top: 87%;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .wholeTomatoImage {
+        display: none;
+    }
+
+
+    .lemonImage {
+        right: -30%;
+    }
+}
+
+@media (max-width: 700px) {
+    .pepperImage {
+        display: none;
+    }
+
+    .tomatoImage {
+        left: -10%;
+        z-index: -1;
+    }
+
+    .lemonImage {
+        right: -70%;
+    }
+}

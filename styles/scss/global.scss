@@ -1,0 +1,24 @@
+// $theme-colors: (
+//   'primary': #145bea,
+//   'secondary': #833bec,
+//   'success': #1ce1ac,
+//   'info': #ff7d50,
+//   'warning': #ffbe0b,
+//   'danger': #ff007f,
+//   'light': #c0ccda,
+//   'dark': #001738,
+// );
+
+
+
+// override bootsrap variable nav-pills 
+// active background color to gray with 0.5 opacity
+$nav-pills-link-active-bg: rgba(178, 182, 182, 0.22);
+$nav-pills-border-radius: 5px;
+
+// override navbar dark text color
+$navbar-dark-color: #F2E1C7;
+
+
+
+@import '/node_modules/bootstrap/scss/bootstrap.scss';

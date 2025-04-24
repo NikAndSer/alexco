@@ -1,0 +1,73 @@
+.heroWrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.imageWrapper {
+    z-index: -1;
+}
+
+.heroContent {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align on the left side */
+    color: black;
+    font-family: var(--font-titleFont);
+  }
+
+  .logo {
+    display: none;
+    
+  }
+
+.main-section {
+    position: relative;
+    margin-top: -10px; /* Overlap the bottom of the hero image by 10 pixels */
+    z-index: 2; /* Make sure main section is above the hero content */
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.50); /* Increased intensity for smaller screens */
+  }
+  .heroContent {
+    color: #fff;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center using translate */
+    text-align: center; /* Center text horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 0; /* Remove margin-top */
+  }
+
+  .logo {
+   /* display in the center of vieport */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+
+
+

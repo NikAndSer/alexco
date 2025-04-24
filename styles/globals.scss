@@ -1,0 +1,95 @@
+/* styles/globals.css */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #505A60;
+  font-family: var(--font-textFont);
+  color: #fff;
+}
+
+.navbar {
+  position: absolute;
+  top: 0; 
+  width: 100%;
+  z-index: 1;
+  font-family: var(--font-titleFont);
+  background: linear-gradient(155deg, rgba(27, 35, 39, 0.3) 0%, rgba(27, 35, 39, 1) 50%);
+  color: #F2E1C7;
+  // background: linear-gradient(297deg, #1B2327 50%, rgba(27, 35, 39, 0));
+}
+
+.main-section {
+  background: linear-gradient(155deg, rgba(27, 35, 39, 0.3) 0%, rgba(27, 35, 39, 1) 50%);
+  position: relative;
+  margin-top: -50px; /* Overlap the bottom of the hero image by 10 pixels */
+  z-index: 2; /* Make sure main section is above the hero content */
+}
+
+h2, h3, h4, h5 {
+  font-family: var(--font-titleFont);
+  color: #F2E1C7;
+}
+
+.home-menu {
+  margin-top: 5px;
+  font-size: 12px;
+  
+}
+
+.card-title {
+  margin-bottom: 5px;
+  font-family: var(--font-titleFont);
+  color: #F2E1C7;
+}
+
+.footer {
+  background: linear-gradient(155deg, rgba(48, 57, 61, 0.3) 0%, rgba(48, 57, 61, 1) 50%);
+  font-family: var(--font-titleFont);
+  color: #F2E1C7;
+}
+
+@media (min-width: 768px) {
+  .hotdealsH3 {
+    color: black;
+}
+}
+
+@media (max-width: 768px) {
+  .hotdealsH3 {
+    color: white;
+}
+}
+
+// [class*="col"] {
+//   padding: 1rem;
+//   background-color: #33b5e5;
+//   border: 2px solid #fff;
+//   color: #fff;
+//   text-align: center;
+// }
+
+// [class*="con"] {
+//   padding: 1rem;
+//   background-color: #9e33e5;
+//   border: 2px solid #fff;
+//   color: #fff;
+//   text-align: center;
+// }
+
+
+
+
+

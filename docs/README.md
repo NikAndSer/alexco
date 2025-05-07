@@ -150,3 +150,47 @@ Guidelines for contributing to the project will be added here.
 ## License
 
 License information will be added here.
+
+## Migration & Learning Milestones (Spring 2024)
+
+### Timeline & Key Events
+
+**May 2024**
+
+- Migrated project from Next.js Pages Router and next-i18next to the App Router with folder-based i18n.
+- Removed all next-i18next usage and configuration files.
+- Implemented custom middleware for language redirection.
+- Uploaded the project to GitHub and learned collaborative workflows.
+
+### Terminal Commands Learned & Used
+
+- `git init` — Initialize a new Git repository.
+- `git add .` — Stage all changes for commit.
+- `git commit -m "message"` — Commit staged changes with a message.
+- `git branch -b feature/branch-name` — Create and switch to a new branch.
+- `git push -u origin branch-name` — Push a branch to GitHub and set upstream.
+- `git checkout main` — Switch to the main branch.
+- `git merge feature/branch-name` — Merge a feature branch into main.
+- `git push origin main` — Push the main branch to GitHub.
+- `git push origin --delete branch-name` — Delete a remote branch (after changing default branch if needed).
+
+### Errors Encountered & How They Were Solved
+
+- **Untracked working tree files would be overwritten by merge:**
+  - Cause: Local files not tracked by Git conflicted with files in the branch being merged.
+  - Solution: Added or moved the file, then retried the merge.
+- **Cannot delete remote branch (refusing to delete the current branch):**
+  - Cause: Attempted to delete a branch set as the default branch on GitHub.
+  - Solution: Changed the default branch to `main` in GitHub settings, then deleted the feature branch.
+- **Merge commit message editor confusion:**
+  - Cause: Git opened Vim or Nano for a merge commit message.
+  - Solution: Used `:wq` in Vim or `Ctrl+X`, then `Y` and `Enter` in Nano to save and exit.
+
+### What I Learned
+
+- How to migrate a Next.js project to the App Router and folder-based i18n.
+- How to use and resolve issues with Git and GitHub from the terminal.
+- How to handle merge conflicts and untracked files.
+- How to change the default branch and manage branches on GitHub.
+- The importance of reading error messages and using them to guide troubleshooting.
+- How to document a project and learning journey for future reference.

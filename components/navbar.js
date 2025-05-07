@@ -1,4 +1,3 @@
-import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import Logo from './logo.js';
 import NavTabs from './navtabs.js';
@@ -6,8 +5,6 @@ import Image from 'next/image';
 import styles from './navbar.module.css';
 
 const Navbar = () => {
-  const { t } = useTranslation('common');
-
   return (
 
     // BOOTSTRAP NAVBAR FULL WIDTH
@@ -45,7 +42,7 @@ const Navbar = () => {
           <NavTabs />
         </div>
 
-        
+
       </div>
     </nav>
 

@@ -1,9 +1,6 @@
-import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 
 const NavTabs = () => {
-  const { t } = useTranslation('common');
-
   const user = false;
   return (
     <ul className="navbar-nav nav-pills ms-auto">
@@ -60,14 +57,14 @@ const NavTabs = () => {
 
       {/* Login or Orders */}
       <li className="nav-item">
-      {!user ? (
+        {!user ? (
           <Link className="nav-link" href="/login">
-          {t('nav.login')}
-        </Link>
+            {t('nav.login')}
+          </Link>
         ) : (
           <Link className="nav-link" href="/orders">
-          {t('nav.orders')}
-        </Link>
+            {t('nav.orders')}
+          </Link>
         )}
       </li>
 

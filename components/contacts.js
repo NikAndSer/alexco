@@ -1,21 +1,12 @@
-
-import { useTranslation } from 'next-i18next';
 import styles from './contacts.module.css';
 import Logo from './logo';
 
 const Contacts = () => {
-    const { t } = useTranslation('common');
-
     return (
-
-
         <div className={styles.contacts}>
             <h2 className='text-center'>{t('Location & Contacts')}</h2>
             <div className="container mt-5">
                 <div className="row g-5">
-
-
-
 
                     {/* MAP */}
                     <div className="col-md-6">
@@ -32,17 +23,11 @@ const Contacts = () => {
                         </div>
                     </div>
 
-
-
-
                     {/* CONTACTS */}
                     <div className="col-md-6">
                         <div className={styles.contactsWrapper}>
-
-
                             <Logo />
                             <div className="container ps-0 mt-4">
-
 
                                 {/* ADDRESS */}
                                 <div className="row">
@@ -52,7 +37,6 @@ const Contacts = () => {
                                     </div>
                                 </div>
 
-
                                 {/* PHONE */}
                                 <div className="row mt-2">
                                     <div className="col d-flex align-items-center">
@@ -60,7 +44,6 @@ const Contacts = () => {
                                         <p className="bg mb-0">{t('Телефон: +7 (495) 555-55-55')}</p>
                                     </div>
                                 </div>
-
 
                                 {/* EMAIL */}
                                 <div className="row mt-2">
@@ -70,7 +53,6 @@ const Contacts = () => {
                                     </div>
                                 </div>
 
-
                                 {/* WORKING HOURS */}
                                 <div className="row mt-2">
                                     <div className="col d-flex align-items-baseline">
@@ -79,13 +61,12 @@ const Contacts = () => {
                                     </div>
                                 </div>
 
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     );
 };
